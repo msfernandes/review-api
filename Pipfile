@@ -3,20 +3,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[dev-packages]
-ipdb = "*"
+[requires]
+python_version = "3.6"
 
 [packages]
 django = "*"
-djangorestframework = "*"
 python-decouple = "*"
+djangorestframework = "*"
 gunicorn = "*"
 whitenoise = "*"
 "psycopg2" = "*"
-django-extensions = "*"
 "psycopg2-binary" = "*"
 coverage = "*"
 "flake8" = "*"
-
-[requires]
-python_version = "3.6"
+ipython = "*"

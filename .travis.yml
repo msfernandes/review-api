@@ -4,9 +4,15 @@ python:
   - "3.6-dev"
   - "3.7-dev"
 
+before_install:
+  - sudo apt install -y software-properties-common python-software-properties
+  - sudo add-apt-repository ppa:pypa/ppa -y
+  - sudo apt update -q
+  - sudo apt install -y pipenv
+
 install:
   - pip install -U pip pipenv
-  - pipenv install
+  - pipenv install --system
 
 script:
   - pipenv run flake8 src/
