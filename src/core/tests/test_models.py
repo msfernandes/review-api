@@ -10,7 +10,7 @@ class TestReview(TestCase):
 
     def setUp(self):
         self.user = User.objects.create(first_name='John', last_name='Doe',
-                                        email='john@doe.com')
+                                        email='john@doe.com', username='john')
         self.company = models.Company.objects.create(name='Company')
 
     def test_str(self):
