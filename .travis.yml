@@ -10,4 +10,4 @@ install:
 
 script:
   - pipenv run flake8 src/
-  - pipenv run coverage run src/manage.py test
+  - pipenv run coverage run src/manage.py test src/

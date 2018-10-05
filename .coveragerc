@@ -3,6 +3,7 @@
   omit =
     src/review_api/*
     src/manage.py
+    src/*/tests/*
 
 [report]
   show_missing = True
