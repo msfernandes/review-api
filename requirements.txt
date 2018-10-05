@@ -1,0 +1,11 @@
+django
+python-decouple
+djangorestframework
+gunicorn
+whitenoise
+psycopg2
+psycopg2-binary
+coverage
+flake8
+ipython
+django_extensions
