@@ -8,6 +8,12 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
+python-decouple = "*"
+gunicorn = "*"
+whitenoise = "*"
+"psycopg2" = "*"
+django-extensions = "*"
+"psycopg2-binary" = "*"
 
 [requires]
 python_version = "3.6"
