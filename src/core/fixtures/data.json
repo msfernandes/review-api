@@ -1,0 +1,129 @@
+[
+{
+  "model": "core.company",
+  "pk": 1,
+  "fields": {
+    "name": "Company Test"
+  }
+},
+{
+  "model": "core.company",
+  "pk": 2,
+  "fields": {
+    "name": "Another Company"
+  }
+},
+{
+  "model": "core.company",
+  "pk": 3,
+  "fields": {
+    "name": "XPTO"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$TWsuYKHFe3Kw$H1TofAmoIsZ9SDDBQ/IcSik0QiPvjbZooay80rIOW3A=",
+    "last_login": "2018-10-06T00:47:08.829Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@email.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-10-06T00:46:57.990Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$34JsUvt8QSza$cg9eFJnQ/Rgql/F9Mc/uvpH3DeqkZG5zq/aWemjDy4g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "john",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-10-06T00:47:21Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$pLUw3qwuD23A$wsoh/Ur3xhuXjbV9SHhpANGFy9hh+/b6yDFe6tCodNk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "hayden",
+    "first_name": "Hayden",
+    "last_name": "",
+    "email": "hayden@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-10-06T00:47:42Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.review",
+  "pk": 1,
+  "fields": {
+    "rating": 5,
+    "title": "Lorem ipsum dolor sit amet",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ip": "198.142.8.76",
+    "submission_date": "2018-10-06T00:42:23.931Z",
+    "company": 2,
+    "reviewer": 3
+  }
+},
+{
+  "model": "core.review",
+  "pk": 2,
+  "fields": {
+    "rating": 3,
+    "title": "Deserunt mollit anim id est laborum",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ip": "127.0.0.1",
+    "submission_date": "2018-10-06T00:43:06.756Z",
+    "company": 1,
+    "reviewer": 2
+  }
+},
+{
+  "model": "core.review",
+  "pk": 3,
+  "fields": {
+    "rating": 1,
+    "title": "consectetur adipisicing elit",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ip": "198.142.8.76",
+    "submission_date": "2018-10-06T00:43:24.854Z",
+    "company": 1,
+    "reviewer": 2
+  }
+},
+{
+  "model": "core.review",
+  "pk": 4,
+  "fields": {
+    "rating": 4,
+    "title": "Eiusmod tempor incididunt",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ip": "198.122.1.42",
+    "submission_date": "2018-10-06T00:44:06.573Z",
+    "company": 3,
+    "reviewer": 3
+  }
+}
+]
