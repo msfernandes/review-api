@@ -173,3 +173,11 @@ If the review creation is successfull, the API will return a JSON with the creat
 }
 ```
 
+## Admin panel
+
+The administration panel is available through `/admin/` and you can manage all access tokens, users, companies and reviews. If you executed all steps from **Setup development environment** you already have an user account with admin privileges:
+
+* username: *admin*
+* password: *1234*
+
+With these credentials you can enter into admin panel.
