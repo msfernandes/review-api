@@ -8,6 +8,6 @@ router = routers.DefaultRouter()
 router.register('reviews', views.ReviewViewSet)
 
 urlpatterns = [
-    path('/api/v1/', include(router.urls)),
-    path('auth/token/', obtain_auth_token)
+    path('api/v1/', include(router.urls)),
+    path('api/v1/auth/token/', obtain_auth_token)
 ]

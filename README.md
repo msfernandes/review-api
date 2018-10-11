@@ -42,7 +42,7 @@ To automate the deploy to heroku I configured a `.travis.yml` to run all the tes
 
 ## The API
 
-The API is composed by two endpoints: `/auth/token/` and `/reviews/`.
+The API is composed by two endpoints: `/api/v1/auth/token/` and `/api/v1/reviews/`.
 
 ### /auth/token/
 
@@ -55,7 +55,7 @@ Request example:
 curl --header "Content-Type: application/json" \
     --request POST \
     --data '{"username":"john","password":"321ewqdsa"}'  \
-    http://localhost:8000/auth/token/
+    http://localhost:8000/api/v1/auth/token/
 ```
 
 And the endpoint will return the access token (if the credentials are valid):
@@ -66,7 +66,7 @@ And the endpoint will return the access token (if the credentials are valid):
 
 ### /reviews/
 
-Once you have an access token, you can make a request to the `/reviews/` endpoint. You can perform two operations:
+Once you have an access token, you can make a request to the `/api/v1/reviews/` endpoint. You can perform two operations:
 
 #### GET
 
@@ -76,7 +76,7 @@ Request example:
 ```
 curl --header "Content-Type: application/json" \
     --header "Authorization: Token access_token" \
-    --request GET http://localhost:8000/reviews/
+    --request GET http://localhost:8000/api/v1/reviews/
 ```
 
 Response:
@@ -147,7 +147,7 @@ curl --header "Content-Type: application/json" \
     --header "Authorization: Token access_token" \
     --request POST \
     --data '{"rating": 3, "title": "Review Title", "summary": "Review summary", "company": {"name": "Company Name"}}'  \
-    http://localhost:8000/reviews/
+    http://localhost:8000/api/v1/reviews/
 ```
 
 If the review creation is successfull, the API will return a JSON with the created review:
